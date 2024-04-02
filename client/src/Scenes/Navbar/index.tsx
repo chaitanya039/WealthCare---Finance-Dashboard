@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Typography, useTheme } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 import FlexBetween from '@/Components/FlexBetween';
 import Logo from "@/assets/wealthcare-logo.png";
 import MenuIcon from '@mui/icons-material/Menu';
 import "./style.css";
 
-type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   
   const { palette } = useTheme();
   const [ selected, setSelected ] = useState("dashboard");

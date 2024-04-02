@@ -3,13 +3,12 @@ import DashboardBox from '@/Components/DashboardBox';
 import FlexBetween from '@/Components/FlexBetween';
 import { useGetKpisQuery, useGetProductsQuery, useGetTranscationsQuery } from '@/State/api';
 import { Box, Typography, useTheme } from '@mui/material';
-import { DataGrid, GridCellParams, GridColDef } from '@mui/x-data-grid';
+import { DataGrid, GridCellParams } from '@mui/x-data-grid';
 import { useMemo } from 'react';
 import { Cell, Pie, PieChart } from 'recharts';
 
-type Props = {}
 
-const Row3 = (props: Props) => {
+const Row3 = () => {
   
   const { palette } = useTheme();
   const pieColors1 = [palette.red[700], palette.red[400]];  
@@ -191,6 +190,7 @@ const Row3 = (props: Props) => {
                           paddingAngle={2}
                           dataKey="value"
                         >
+                          {/* eslint-disable-next-line */}
                           {pieChartData?.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={i === 0 ? pieColors1[index] : (i === 1 ? pieColors2[index] : pieColors3[index])} />
                           ))}
