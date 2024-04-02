@@ -190,7 +190,7 @@ const Row3 = () => {
                           paddingAngle={2}
                           dataKey="value"
                         >
-                          {/* eslint-disable-next-line */}
+                          {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
                           {pieChartData?.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={i === 0 ? pieColors1[index] : (i === 1 ? pieColors2[index] : pieColors3[index])} />
                           ))}

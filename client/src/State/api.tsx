@@ -9,7 +9,7 @@ import { GetKpisResponse, GetProductsResponse, GetTranscationResponse } from "./
 */
 
 export const api = createApi({
-    baseQuery : fetchBaseQuery({ baseUrl : "http://localhost:1337" }),
+    baseQuery : fetchBaseQuery({ baseUrl : "https://wealthcare-finance-dashboard.onrender.com" }),
     reducerPath : "main",
     tagTypes : ["Kpis", "Products", "Transcations"],
     endpoints : (build) => ({

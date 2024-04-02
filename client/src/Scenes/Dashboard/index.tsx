@@ -1,11 +1,8 @@
-import DashboardBox from '@/Components/DashboardBox';
 import { Box, useMediaQuery } from '@mui/material'
-import { useState } from 'react'
 import Row1 from './Row1';
 import Row2 from './Row2';
 import Row3 from './Row3';
 
-type Props = {}
 
 const gridTemplateLargeScreens = 
 `
@@ -55,7 +52,7 @@ const gridTemplateSmallScreens =
     "j"
 `;
 
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
     
   const isAboveMediumScreen = useMediaQuery("(min-width : 1200px)");
   

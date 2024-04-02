@@ -5,9 +5,7 @@ import { useTheme } from '@mui/material';
 import { useMemo } from 'react';
 import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid, Line, LineChart, Legend, Bar, BarChart } from 'recharts';
 
-type Props = {}
-
-const Row1 = (props: Props) => {
+const Row1 = () => {
 
   const { data } = useGetKpisQuery();
   const { palette } = useTheme();
