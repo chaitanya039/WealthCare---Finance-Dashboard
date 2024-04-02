@@ -191,7 +191,7 @@ const Row3 = () => {
                           dataKey="value"
                         >
                           {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
-                          {pieChartData?.map((entry, index) => (
+                          {pieChartData?.map((_, index) => (
                             <Cell key={`cell-${index}`} fill={i === 0 ? pieColors1[index] : (i === 1 ? pieColors2[index] : pieColors3[index])} />
                           ))}
                         </Pie>
