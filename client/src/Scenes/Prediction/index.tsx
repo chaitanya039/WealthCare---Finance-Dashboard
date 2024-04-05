@@ -15,6 +15,7 @@ import {
   YAxis,
 } from "recharts";
 import regression, { DataPoint } from "regression";
+import Loader from "../Loader";
 
 const Predictions = () => {
   const { palette } = useTheme();
@@ -44,6 +45,7 @@ const Predictions = () => {
   
 
   return (
+    kpiData ?
     <DashboardBox width="100%" height="100%" p="1rem" overflow="hidden">
       <FlexBetween m="1rem 1.5rem" gap="1rem">
         <Box>
@@ -117,7 +119,7 @@ const Predictions = () => {
           )}
         </LineChart>
       </ResponsiveContainer>
-    </DashboardBox>
+    </DashboardBox> : <Loader />
   );
 };
 
