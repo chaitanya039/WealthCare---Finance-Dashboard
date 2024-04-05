@@ -108,7 +108,7 @@ const Row2 = () => {
         </DashboardBox>
         <DashboardBox gridArea={"e"}>
           <BoxHeader title='Campaigns and Targets' sidetext='+3%' />
-          <FlexBetween mt={"0.25rem"} gap={"1.5rem"} pr={'1rem'} >
+          <FlexBetween mt={"0.25rem"} gap={"0.5rem"} pr={'1rem'} >
           <PieChart
             width={110}
             height={100}

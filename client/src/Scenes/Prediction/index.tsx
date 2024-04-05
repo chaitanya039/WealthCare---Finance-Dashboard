@@ -61,7 +61,7 @@ const Predictions = () => {
             color: palette.white[100],
             fontWeight: 600,
             backgroundColor: "purple",
-            boxShadow: "0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,.4)",
+            boxShadow: "0.12rem 0.12rem 0.1rem .1rem rgba(0,0,0,.1)",
           }}
         >
           Show Predicted Revenue for Next Year
@@ -96,7 +96,7 @@ const Predictions = () => {
             />
           </YAxis>
           <Tooltip wrapperStyle={{ fontWeight : 600 }} />
-          <Legend verticalAlign="top"  />
+          <Legend verticalAlign="top" />
           <Line
             type="monotone"
             dataKey="Actual Revenue"
